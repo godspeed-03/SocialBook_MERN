@@ -20,6 +20,7 @@ import {
   Menu,
   Close,
 } from "@mui/icons-material";
+import Typewriter from "typewriter-effect";
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
@@ -56,7 +57,30 @@ const Navbar = ({ userId }) => {
             },
           }}
         >
-          Socialbook
+           <Typewriter
+
+options={{
+  cursor: '',
+  loop: 'true'
+}}
+
+onInit={(typewriter) => {
+
+  typewriter
+    .typeString(" Socialbook")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(" Socialbook")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(" Socialbook")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('')
+    .start();
+}}
+/>
+         
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween

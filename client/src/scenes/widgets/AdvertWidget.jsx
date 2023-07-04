@@ -12,17 +12,10 @@ import {
 
 const AdvertWidget = () => {
   const { palette } = useTheme();
-  const dark = palette.neutral.dark;
   const medium = palette.neutral.medium;
 
   return (
     <WidgetWrapper>
-
-        <Typography style={{ text:"center"}} color={dark} variant="h5" fontWeight="500">
-          Sponsored
-        </Typography>
-
-
       <img
         width="100%"
         height="auto"

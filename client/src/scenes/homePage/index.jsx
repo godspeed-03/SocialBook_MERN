@@ -7,6 +7,7 @@ import PostsWidget from "scenes/widgets/PostsWidget";
 import AdvertWidget from "scenes/widgets/AdvertWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
 import FooterWidget from "scenes/widgets/FooterWidget";
+// import {motion} from 'framer-motion'
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -23,8 +24,18 @@ const HomePage = () => {
         justifyContent="space-between"
       >
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
-          <AdvertWidget />
+        {/* <motion.span 
+      initial = {{left : '2rem'}}
+      whileInView={{left :'-5rem'}}
+      transition={{
+        duration : 2,
+        type : 'spring'
+      }}
+      >
+          
+        </motion.span> */}
 
+          <AdvertWidget />
         </Box>
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
