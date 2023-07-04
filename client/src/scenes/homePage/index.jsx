@@ -13,9 +13,7 @@ const HomePage = () => {
   const { _id, picturePath } = useSelector((state) => state.user);
 
   return (
-    <Box
-      backgroundColor="#ffd9d4"
-    >
+    <Box>
       <Navbar userId={_id} />
       <Box
         width="100%"
@@ -43,7 +41,7 @@ const HomePage = () => {
             <FriendListWidget userId={_id} />
             <Box m="2rem 0" />
 
-            <FooterWidget/>
+            <FooterWidget />
           </Box>
 
 

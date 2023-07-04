@@ -27,12 +27,9 @@ import FlexBetween from "components/FlexBetween";
 
 const Navbar = ({ userId }) => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
-  // const [user, setUser] = useState(null);
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const suser = useSelector((state) => state.user);
-  // const token = useSelector((state) => state.token);
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
 
   const theme = useTheme();
@@ -41,16 +38,6 @@ const Navbar = ({ userId }) => {
   const background = theme.palette.background.default;
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
-
-
-  // const getUser = async () => {
-  //   const response = await fetch(`http://localhost:2999/users/${userId}`, {
-  //     method: "GET",
-  //     headers: { Authorization: `Bearer ${token}` },
-  //   });
-  //   // const data = await response.json();
-  //   // setUser(data);
-  // };
 
 
   const fullName = `${suser.firstName} ${suser.lastName}`;

@@ -232,7 +232,6 @@ const Form = () => {
             />
           </Box>
 
-          {/* BUTTONS */}
           <Box
           display="flex"
           flexDirection="column"
@@ -240,7 +239,6 @@ const Form = () => {
           alignItems="center"
           >
             <Button
-              // fullWidth
               type="submit"
               sx={{
                 text:"3rem",
