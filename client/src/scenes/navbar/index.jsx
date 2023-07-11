@@ -20,7 +20,7 @@ import {
   Menu,
   Close,
 } from "@mui/icons-material";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
@@ -57,7 +57,7 @@ const Navbar = ({ userId }) => {
             },
           }}
         >
-           <Typewriter
+           {/* <Typewriter
 
 options={{
   cursor: '',
@@ -79,7 +79,8 @@ onInit={(typewriter) => {
     .typeString('')
     .start();
 }}
-/>
+/> */}
+SocialBook
          
         </Typography>
         {isNonMobileScreens && (
@@ -88,8 +89,8 @@ onInit={(typewriter) => {
             borderRadius="9px"
             gap="3rem"
             padding="0.1rem 1.5rem"
-            position="fixed"
-            left="20rem"
+            // position="fixed"
+            // left="20rem"
           >
             <InputBase placeholder="Search..." />
             <IconButton>
